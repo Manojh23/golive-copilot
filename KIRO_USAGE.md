@@ -10,7 +10,7 @@ Kiro helped implement:
 
 - React frontend and FastAPI backend.
 - SQLite storage and application APIs.
-- Document ingestion, evidence retrieval, and clinical synonym support.
+- Document ingestion, evidence retrieval.
 - Gemini integration with structured outputs and citation validation.
 - Impact reviews, reviewer assignments, and approval workflows.
 - Staff-feedback grouping and links to earlier findings.
