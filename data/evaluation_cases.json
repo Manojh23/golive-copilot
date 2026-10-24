@@ -1,0 +1,6 @@
+{
+  "label": "Fictional pre-launch rollout with eight deliberately planted gaps",
+  "expected_rule_ids": ["duplicate_entry", "missing_inputs", "unavailable_path", "alert_owner", "training_missing", "residency_mismatch", "validation_missing", "interface_operation"],
+  "negative_cases": ["Do not invent an alerts-per-shift estimate", "Do not claim Duke validated EarlyWatch", "Do not label an undocumented review as proof it never happened", "Do not count content approval as issue resolution", "Do not apply demo-specific requirements to a replacement uploaded app"],
+  "scope": "Tests of a constructed scenario and rule pipeline. Not a benchmark of real hospital effectiveness or live model accuracy."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "v1",
+  "hooks": [{
+    "name": "Backend regression and property checks",
+    "description": "Run isolated tests after the agent saves Python backend or test files. Prepared outside Kiro; verify an actual trigger before claiming use.",
+    "trigger": "PostFileSave",
+    "matcher": "(^|/)(backend|tests)/.*\\.py$",
+    "action": {"type": "command", "command": ".venv/bin/python -m pytest tests -q"},
+    "timeout": 60,
+    "enabled": true
+  }]
+}

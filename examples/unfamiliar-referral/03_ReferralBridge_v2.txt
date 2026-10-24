@@ -1,0 +1,7 @@
+REFERRALBRIDGE - PROPOSED APP GUIDE, VERSION 2
+FICTIONAL EVALUATION DOCUMENT. This is a synthetic administrative app, not a real vendor product.
+
+ReferralBridge sends physician-approved referrals to receiving clinics. It uses existing information from CareRecord and updates the corresponding case in FollowTrack without requiring staff to enter the same information again.
+After the receiving clinic acknowledges receipt of a referral message, ReferralBridge records the delivery acknowledgement and leaves the FollowTrack case open. This acknowledgement confirms message receipt; it does not confirm that an appointment has been scheduled.
+ReferralBridge changes the FollowTrack case status to closed only after an appointment confirmation has been recorded in CareRecord. Cases without that confirmation remain open for front-desk follow-up.
+TeamInbox sends referral delivery notifications to front-desk staff. The app processes data in the United States.

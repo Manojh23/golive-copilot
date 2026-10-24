@@ -1,0 +1,9 @@
+CEDAR REFERRAL PILOT - CURRENT WORKFLOW, REVISION 1
+FICTIONAL EVALUATION DOCUMENT. No real hospital, patient, or vendor is represented.
+
+This administrative pilot uses CareRecord for patient and appointment records, FollowTrack for referral case status, and TeamInbox for staff messages. LabBridge remains installed but is not used by this referral workflow.
+Front-desk staff create a referral case in FollowTrack after the physician has approved the referral. They send the referral to the receiving clinic and record that it was sent.
+A sent referral remains an open case. Front-desk staff may close a referral case only after the receiving clinic confirms an appointment and the appointment confirmation is recorded in CareRecord.
+If no appointment has been confirmed, the referral remains open for front-desk follow-up. Clinical decisions remain with physicians.
+
+For this fictional test, notification ownership belongs to Front desk, training and administrative pilot verification records are supplied, processing is in the United States, and no manual duplicate data entry is required. These baseline records do not establish that a proposed app follows the case-closure procedure.

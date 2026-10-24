@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "public-docs-fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "disabled": true,
+      "autoApprove": []
+    }
+  }
+}

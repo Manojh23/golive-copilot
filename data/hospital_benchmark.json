@@ -1,0 +1,151 @@
+{
+  "available": true,
+  "title": "Sepsis Cases \u2014 Event Log",
+  "creator": "Felix Mannhardt (2016)",
+  "description": "Anonymized historical hospital pathways recorded in an ERP system. One trace is a hospital pathway; activity labels are not app identities.",
+  "cases": 1050,
+  "events": 15214,
+  "median_events_per_case": 13.0,
+  "activities": [
+    {
+      "name": "Leucocytes",
+      "count": 3383
+    },
+    {
+      "name": "CRP",
+      "count": 3262
+    },
+    {
+      "name": "LacticAcid",
+      "count": 1466
+    },
+    {
+      "name": "Admission NC",
+      "count": 1182
+    },
+    {
+      "name": "ER Triage",
+      "count": 1053
+    },
+    {
+      "name": "ER Registration",
+      "count": 1050
+    },
+    {
+      "name": "ER Sepsis Triage",
+      "count": 1049
+    },
+    {
+      "name": "IV Antibiotics",
+      "count": 823
+    },
+    {
+      "name": "IV Liquid",
+      "count": 753
+    },
+    {
+      "name": "Release A",
+      "count": 671
+    },
+    {
+      "name": "Return ER",
+      "count": 294
+    },
+    {
+      "name": "Admission IC",
+      "count": 117
+    },
+    {
+      "name": "Release B",
+      "count": 56
+    },
+    {
+      "name": "Release C",
+      "count": 25
+    },
+    {
+      "name": "Release D",
+      "count": 24
+    },
+    {
+      "name": "Release E",
+      "count": 6
+    }
+  ],
+  "transitions": [
+    {
+      "from": "Leucocytes",
+      "to": "CRP",
+      "count": 1778
+    },
+    {
+      "from": "CRP",
+      "to": "Leucocytes",
+      "count": 1445
+    },
+    {
+      "from": "ER Registration",
+      "to": "ER Triage",
+      "count": 971
+    },
+    {
+      "from": "ER Triage",
+      "to": "ER Sepsis Triage",
+      "count": 905
+    },
+    {
+      "from": "CRP",
+      "to": "LacticAcid",
+      "count": 629
+    },
+    {
+      "from": "LacticAcid",
+      "to": "Leucocytes",
+      "count": 565
+    },
+    {
+      "from": "IV Liquid",
+      "to": "IV Antibiotics",
+      "count": 501
+    },
+    {
+      "from": "IV Antibiotics",
+      "to": "Admission NC",
+      "count": 489
+    },
+    {
+      "from": "Leucocytes",
+      "to": "Leucocytes",
+      "count": 458
+    },
+    {
+      "from": "Leucocytes",
+      "to": "LacticAcid",
+      "count": 435
+    },
+    {
+      "from": "Admission NC",
+      "to": "Leucocytes",
+      "count": 408
+    },
+    {
+      "from": "LacticAcid",
+      "to": "CRP",
+      "count": 404
+    }
+  ],
+  "source_url": "https://doi.org/10.4121/uuid:915d2bfb-7e84-49ad-a286-dc35f063a460",
+  "retrieval_url": "https://media.githubusercontent.com/media/delafuenteh/medical-data-eventlogs/main/Sepsis%20Cases%20-%20IO%20Acts.xes",
+  "sha256": "20f844ab39f96045daff8470448c1d3fb47dfebf3a9fd5dc21bb80995d2cb6bb",
+  "excluded_boundary_markers": 2100,
+  "license": "4TU General Terms of Use; consult the original record. Only computed aggregates are bundled.",
+  "license_url": "https://data.4tu.nl/info/about-our-services/terms-of-use",
+  "provenance": "Original creator: Felix Mannhardt; publisher: 4TU.ResearchData. Historical coverage: November 2013\u2013June 2015. The disclosed IO Acts mirror adds alpha/omega trace boundaries: these artificial markers are excluded from activity and event counts. The origin was unavailable. No patient-level rows are included in the application bundle.",
+  "prepared_at": "2026-10-24T19:30:23.454667+00:00",
+  "limitations": [
+    "Not a dataset of installed medical apps",
+    "Not an EarlyWatch evaluation",
+    "Repeated events are not automatically unnecessary",
+    "No estimated clinical benefit or avoided delay"
+  ]
+}
