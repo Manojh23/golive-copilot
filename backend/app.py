@@ -301,7 +301,14 @@ def export_brief(role:str='All roles',approved_only:bool=True):
     if not items:para('No approved findings for this role yet. Review findings and assign an owner before publishing guidance.')
     for i in items:
         para(i['title'],'Heading2');para(i['impact']);para('Review action: '+i['action']);para('Owner: '+(i['owner'] or 'Unassigned'))
-        for c in i['citations'][:2]:para('Evidence: '+c['title']+' / '+c['locator']+' / '+c['chunk_id'])
+        note=(i.get('review_note') or '').strip()
+        if note:para('Reviewer note: '+note)
+        citations=i.get('citations') or []
+        if citations:
+            para('Supporting source quotations:')
+            for n,c in enumerate(citations,1):
+                para(str(n)+'. '+(c.get('quote') or ''))
+                para('Source: '+(c.get('title') or 'Unknown source')+' / '+(c.get('locator') or 'locator unavailable')+' (chunk '+c.get('chunk_id','?')+')')
     para('Generated '+store.now()+'. Approval means content was reviewed; it does not mean a technical or clinical issue is resolved.')
     doc.build(story)
     return Response(buf.getvalue(),media_type='application/pdf',headers={'Content-Disposition':'attachment; filename="golive-role-brief.pdf"'})

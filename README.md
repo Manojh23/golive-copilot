@@ -1,8 +1,6 @@
 # GoLive Impact Copilot
 
-**Updating an existing installation? Start with [UPDATE_EXISTING_PROJECT.md](UPDATE_EXISTING_PROJECT.md).** The helper preserves your key, saved database and actual Kiro usage log. Then follow [KIRO_NEXT_STEPS.md](KIRO_NEXT_STEPS.md) and [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md).
-
-A local, end-to-end healthcare software rollout prototype. Review a proposed app against an existing workflow, create source-linked findings and role briefs, assign reviewers, and connect post-launch staff feedback to anticipated issues.
+A local, end-to-end healthcare software rollout prototype. Review a proposed app against an existing workflow, create source-linked findings and role briefs, assign reviewers, and connect post-launch staff feedback to anticipated issues. See [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md) before submitting.
 
 ## Run on your Mac in Kiro
 
@@ -94,7 +92,7 @@ See `VERIFICATION.md` for the actual initial results and limits. Real provider a
 
 ## Kiro and hackathon submission
 
-`.kiro/specs/golive-impact/` contains the original requirements, architecture and task plan. `.kiro/specs/retrieval-upgrade/` documents this update and a meaningful continuation task. `.kiro/hooks/` contains test and credential-check definitions for the current Kiro v1 format; `.kiro/settings/mcp.json` contains an optional disabled public-docs fetch server. These have not been exercised in Kiro here. See `KIRO_NEXT_STEPS.md` to activate and verify them in your installed Kiro version. `.kiro/steering/` preserves the product and evidence constraints. Read `KIRO_START_HERE.md` for a concrete Kiro task and `KIRO_USAGE.md` for a truthful usage log template.
+`.kiro/specs/golive-impact/` contains the original requirements, architecture and task plan. `.kiro/specs/retrieval-upgrade/` documents this update and a meaningful continuation task. `.kiro/hooks/` contains test and credential-check definitions for the current Kiro v1 format; `.kiro/settings/mcp.json` configures a public-docs fetch server. See `KIRO_USAGE.md` for the actual hook/MCP outcomes observed in Kiro. `.kiro/steering/` preserves the product and evidence constraints.
 
 The starter was prepared outside Kiro. Merely including these files does not establish material Kiro usage. Open the folder in Kiro, have it run/review the project, complete meaningful work, and record what it actually did. Keep `.kiro/` tracked. Check the hackathon's supplied requirements for public source, a working/testable build, and a public video under three minutes.
 

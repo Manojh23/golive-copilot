@@ -3,7 +3,7 @@
     "public-docs-fetch": {
       "command": "uvx",
       "args": ["mcp-server-fetch"],
-      "disabled": true,
+      "disabled": false,
       "autoApprove": []
     }
   }
